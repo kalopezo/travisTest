@@ -1,5 +1,4 @@
+# this class  is for a test
 class Product < ActiveRecord::Base
-  def name_mas_description
-      return self.name + ' ' + self.description
-  end
+  validates :name, presence: true
 end
